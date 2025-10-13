@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* ======= NAV BAR ======= */
+/* ======================= */
+
+header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+#fst {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+header h4 {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+#nav {
+    display: flex;
+    gap: 35px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-btn button {
+    margin-left: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#nav-btn #Sign-up {
+    background-color: transparent;
+    color: royalblue;
+    border: 2px solid royalblue;
+    transition: all ease 0.4s;
+    padding: 8px;
+}
+
+#nav-btn #Sign-up:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+#nav-btn #Get-std {
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+}
+
+/* ======= SECTION1 ======= */
+/* ======================== */
+
+#section1 {
+    margin-top: 20px;
+    background-color: #efefef;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#about {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    align-items: center;
+}
+
+#at-firm button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#at-firm #get-started {
+    background-color: royalblue;
+    color: white;
+}
+
+#at-firm #free-trial {
+    background-color: transparent;
+    color: royalblue;
+    border: 2px solid royalblue;
+    padding: 9px;
+    transition: all ease 0.4s;
+}
+
+#at-firm #free-trial:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+#img1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: inherit;
+    width: inherit;
+}
+
+#img1 img {
+    padding-top: 25px;
+    width: 90%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* ======= SECTION-2 ======= */
+/* ======================== */
+
+#valuation {
+    margin-top: 2rem;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#first, #sec, #third, #forth {
+    text-align: center;
+}
+
+#valuation p {
+    padding-left: 6.5rem;
+    width: 270px;
+}
+
+/* ======= SECTION-3 ======= */
+/* ======================== */
+
+#section3 {
+    background-color: #efefef;
+    padding-top: 30px;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#about-us {
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    gap: 15rem;
+    overflow: hidden;
+}
+
+#about-us button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+#about-us button:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+#writing h4 {
+    margin-top: 10rem;
+    font-size: 30px;
+    width: 500px;
+}
+
+#writing p {
+    margin-top: 10px;
+    width: 700px;
+}
+
+#writing #image img {
+    border-radius: 20px;
+}
+
+/* ======= SECTION-4 ======= */
+/* ======================== */
+
+#section4 {
+    margin-top: 5rem;
+    padding: 10px 20px;
+}
+
+#expertise button {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 20px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+#expertise button:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+#expertise #writing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#writing h1{
+    margin-top: 10px;
+    width: 30rem;
+    margin-bottom: 25px;
+}
+
+#cards #images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#images #card {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: royalblue;
+    position: relative;
+}
+
+#card #write {
+    padding: 15px;
+}
+
+#card #write h2, #card #write h3{
+    font-weight: 10;
+}
+
+#card #write h3 {
+    margin-bottom: 15px;
+}
+
+#write #icon {
+    position: absolute;
+    bottom: 10px;
+}
+
+#icon a{
+    text-decoration: none;
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+#card img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ======= SECTION-5 ======= */
+/* ========================= */
+
+#milestones {
+  padding: 60px 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.milestone-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.milestone-left {
+  flex: 1;
+}
+
+.milestone-left button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  transition: all ease 0.7s;
+}
+
+.milestone-left button:hover {
+    color: white;
+    background-color: black;
+}
+
+.milestone-left h2 {
+  margin: 20px 0 10px;
+  font-size: 28px;
+}
+
+.milestone-left p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.milestone-left img {
+  width: 100%;
+  height: 400px;
+  max-width: 380px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.milestone-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-left: 2px solid #ddd;
+  padding-left: 30px;
+  position: relative;
+}
+
+.milestone-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+}
+
+.milestone-item .icon {
+  width: 14px;
+  height: 14px;
+  background: #ccc;
+  border-radius: 50%;
+  position: absolute;
+  left: -38px;
+  top: 6px;
+}
+
+.milestone-item.active .icon {
+  background: #007bff;
+}
+
+.milestone-item .content .year {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.milestone-item h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.milestone-item p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.milestone-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.milestone-item a:hover {
+  text-decoration: underline;
+}
+
+/* ======= SECTION-6 ======= */
+/* ======================== */
+
+#section6 {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    gap: 25rem;
+    background-color: #e3e3e3;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#section6 #ceo {
+    width: 40%;
+}
+
+#ceo #logo {
+    display: flex;
+    gap: 25rem;
+}
+
+#ceo #para {
+    margin-top: 40px;
+}
+
+#john {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#img-tag img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+/* ======= SECTION-7 ======= */
+/* ======================== */
+
+#section7 {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #dbdbdb;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#section7 #contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.25fr;
+    gap: 4rem;
+}
+
+#section7 button {
+    padding: 8px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+#section7 button:hover {
+    background-color: black;
+    color: white;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#contact h5, #contact p {
+    font-size: 18px;
+}
+
+#contact p i {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* ======= FOOTER ======= */
+/* ====================== */
+
+footer {
+    margin-top: 40px;
+    background-color: #272727;
+    color: white;
+    height: 50%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#navis {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#suscribe {
+    margin-top: 30px;
+}
+
+#suscribe input {
+    margin-top: 10px;
+    padding: 10px 13px;
+    border-radius: 20px;
+    border: none;
+}
+
+#suscribe button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    font-size: 15px;
+    color: white;
+}
+
+footer #fst {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 15px;
+    font-weight: 10;
+    font-size: 14px;
+}
+
+#column4 {
+    margin-bottom: 4rem;
+}
+
+#last {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
+}
+
+#last i {
+    border: 2px solid black;
+    background-color: white;
+
+    padding: 5px;
+    border-radius: 50%;
+    color: black;
+}
