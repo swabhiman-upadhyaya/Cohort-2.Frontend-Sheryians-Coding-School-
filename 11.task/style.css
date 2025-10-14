@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.9019607843);
+}
+
+#imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 450px 0.9fr;
+  grid-template-areas: "img1 img2 img2 img2" "img1 img3 img4 img5";
+  gap: 10px;
+  width: 100%;
+  border: 3px solid #686868;
+  padding: 10px;
+  border-radius: 10px;
+}
+#imgs img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+}
+#imgs img:nth-child(1) {
+  grid-area: img1;
+  height: 100%;
+}
+#imgs img:nth-child(2) {
+  grid-area: img2;
+  height: 450px;
+}
+#imgs img:nth-child(3) {
+  grid-area: img3;
+  height: 235px;
+}
+#imgs img:nth-child(4) {
+  grid-area: img4;
+  height: 235px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+#imgs img:nth-child(5) {
+  grid-area: img5;
+  height: 235px;
+}/*# sourceMappingURL=style.css.map */
