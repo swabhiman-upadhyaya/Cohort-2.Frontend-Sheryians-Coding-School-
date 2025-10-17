@@ -19,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: main;
-    background-color: #373737;
+    background-color: #242424;
     color: white;
     font-size: clamp(14px, 1.5vw, 18px);
 }
@@ -30,10 +30,9 @@ main {
     @include flex-comlumn(0rem);
     align-items: center;
 
-    .view1 {
+    section.view1 {
         padding: 1rem;
         max-width: 1600px;
-        
         
         @include flex-comlumn(1rem);
 
@@ -50,7 +49,7 @@ main {
 
         .bottom 
         {
-            background-color: #242424;
+            background-color: #373737;
             width: 100%;
             padding: 2rem;
             border-radius: 0.8rem;
@@ -62,7 +61,7 @@ main {
                 h1 
                 {
                     text-transform: uppercase;
-                    font-size: 2rem;
+                    font-size: 2.78rem;
                 }
                 p 
                 {
@@ -83,7 +82,8 @@ main {
                 }
                 button:hover
                 {
-                    background-color: black;
+                    background-color: #373737;
+                    border: 2px solid white;
                     color: white;
                 }
 
@@ -91,11 +91,37 @@ main {
             
         }
     }
+
+    section.view2 {
+        padding: 1rem;
+        @include flex-comlumn(2rem);
+
+        .cp {
+            display: flex;
+            gap: 7rem;
+        }
+        .hf {
+            display: flex;
+            gap: 2rem;
+        }
+        .cp, .hf {
+            p {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: #9c9c9c;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+        
+    }
+
 }
 
 @media (min-width:900px) {
     main {
-        .view1 {
+        section.view1 {
             flex-direction: row;
 
             .top, 
@@ -103,17 +129,31 @@ main {
                 width: 50%;
             }
             .bottom {
-                padding: 2rem;
+                padding: 1.5rem;
                 justify-content: space-between;
             
 
                 .lower-text {
-                    
                     h1 {
                        font-size: 2.8rem; 
                     }
-                    p {
-                    }
+                }
+            }
+        }
+
+        section.view2 {
+            flex-direction: row;
+            gap: 10rem;
+            
+            .cp, .hf {
+                gap: 13rem;
+                text-align: center;
+
+                h1 {
+                    font-size: 2.8rem;
+                }
+                p {
+                    font-size: 1.5rem;
                 }
             }
         }
