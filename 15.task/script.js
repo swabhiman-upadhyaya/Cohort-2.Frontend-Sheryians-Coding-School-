@@ -31,8 +31,8 @@ button.addEventListener("click", () => {
     p.style.scale = `${randomScale}`;
     
     // transition
-    p.style.transition = "opacity 2s ease";
-    p.style.opacity = "1";
+    // p.style.transition = "opacity 2s ease";
+    // p.style.opacity = "1";
 
     p.innerHTML = arr[randomText];
     main.appendChild(p);
