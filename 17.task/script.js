@@ -2,8 +2,6 @@ let img = document.querySelector("img")
 let love = document.querySelector("i")
 
 img.addEventListener("dblclick", function () {
-
-    console.log("hello");
     
     let randomDeg = 85 + Math.floor(Math.random() * 10)
 

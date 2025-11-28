@@ -9,8 +9,6 @@ let download = "false";
 button.addEventListener("click", function () {
 
     let randNum = 30 + Math.floor(Math.random() * 100);
-    console.log(randNum);
-    
 
     button.style.pointerEvents = "none";
 
