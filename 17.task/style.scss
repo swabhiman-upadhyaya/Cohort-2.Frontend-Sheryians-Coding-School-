@@ -28,12 +28,12 @@ main {
             background-color: white;
             border-radius: 0.8rem;
             padding: 1rem;
-            position: relative;
 
             .top {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                position: relative;
 
                 img {
                     height: 320px;
@@ -41,8 +41,8 @@ main {
                     object-fit: cover;
                     object-position: center;
                     border-radius: 0.8rem;
-                    position: relative;
                     cursor: pointer;
+                    overflow: hidden;
                 }
 
                 i {
@@ -53,7 +53,7 @@ main {
                     color: white;
                     cursor: pointer;
                     pointer-events: none;
-                    transition: all ease 0.9s;
+                    transition: all ease 0.7s;
 
                     opacity: 0;
                     transform: translate(-50%, -50%) scale(0);
