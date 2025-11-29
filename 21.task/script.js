@@ -1,0 +1,122 @@
+const posts = [
+    {
+        userName: "lux_daily",
+        isLiked: false,
+        likeCount: 450,
+        commentCount: 80,
+        caption: "Success begins with clarity and consistent action.",
+        video: "",
+        userProfile: "lux1.jpg",
+        shareCount: 30,
+        isDisliked: false,
+        isFollowed: true
+    },
+    {
+        userName: "motivate_me",
+        isLiked: true,
+        likeCount: 1200,
+        commentCount: 300,
+        caption: "Discipline builds the kind of life motivation can't sustain.",
+        video: "",
+        userProfile: "mot1.jpg",
+        shareCount: 100,
+        isDisliked: false,
+        isFollowed: true
+    },
+    {
+        userName: "richmindset",
+        isLiked: false,
+        likeCount: 980,
+        commentCount: 210,
+        caption: "Your environment shapes your results. Choose wisely.",
+        video: "",
+        userProfile: "rich1.png",
+        shareCount: 75,
+        isDisliked: false,
+        isFollowed: false
+    },
+    {
+        userName: "elite_life",
+        isLiked: true,
+        likeCount: 1500,
+        commentCount: 350,
+        caption: "Luxury is the product of patience, vision, and effort.",
+        video: "",
+        userProfile: "elite.jpg",
+        shareCount: 140,
+        isDisliked: false,
+        isFollowed: true
+    },
+    {
+        userName: "drive_success",
+        isLiked: false,
+        likeCount: 670,
+        commentCount: 95,
+        caption: "Every morning is a chance to reset your standards.",
+        video: "",
+        userProfile: "drive.jpg",
+        shareCount: 40,
+        isDisliked: false,
+        isFollowed: false
+    },
+    {
+        userName: "lux_wheels",
+        isLiked: true,
+        likeCount: 2100,
+        commentCount: 420,
+        caption: "Progress feels better than any comfort you sacrifice.",
+        video: "",
+        userProfile: "wheels.png",
+        shareCount: 200,
+        isDisliked: false,
+        isFollowed: true
+    },
+    {
+        userName: "alpha_moves",
+        isLiked: false,
+        likeCount: 850,
+        commentCount: 100,
+        caption: "Work quietly. Achieve loudly.",
+        video: "",
+        userProfile: "alpha.jpg",
+        shareCount: 60,
+        isDisliked: false,
+        isFollowed: false
+    },
+    {
+        userName: "wealth_vibes",
+        isLiked: true,
+        likeCount: 3000,
+        commentCount: 600,
+        caption: "Build a life you don't need to escape from.",
+        video: "",
+        userProfile: "wealth.jpg",
+        shareCount: 310,
+        isDisliked: false,
+        isFollowed: true
+    },
+    {
+        userName: "grind_24x7",
+        isLiked: false,
+        likeCount: 540,
+        commentCount: 70,
+        caption: "Growth demands consistency, not perfection.",
+        video: "",
+        userProfile: "grind.jpg",
+        shareCount: 35,
+        isDisliked: false,
+        isFollowed: false
+    },
+    {
+        userName: "luxury_lens",
+        isLiked: true,
+        likeCount: 1800,
+        commentCount: 260,
+        caption: "Perspective changes everything when you aim higher.",
+        video: "",
+        userProfile: "lens.jpg",
+        shareCount: 150,
+        isDisliked: false,
+        isFollowed: true
+    }
+];
