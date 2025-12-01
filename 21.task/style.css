@@ -17,9 +17,12 @@ main {
     /* overflow: hidden; */
     display: flex;
     justify-content: center;
+
+    
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 main::-webkit-scrollbar {
@@ -37,9 +40,11 @@ main::-webkit-scrollbar {
 .reel {
     height: 99vh;
     width: 350px;
-    background-color: black;
+    background-color: gray;
     position: relative;
     border-radius: 0.6rem;
+
+
     scroll-snap-align: start;
     scroll-snap-stop: always;
     flex-shrink: 0;
@@ -71,11 +76,22 @@ main .reel .right {
     font-size: 1.1rem;
 }
 
+.ri-thumb-up-fill {
+    color: crimson;
+}
+
+.icon h3, .icon h3 p{
+    pointer-events: none;
+}
+
+
+
+
 .reel .bottom {
     position: absolute;
     bottom: 0;
     
-    padding: 0rem 0rem 2.7rem 1rem;
+    padding: 0rem 0rem 3.7rem 1rem;
 }
 
 .bottom .upper {
@@ -95,7 +111,7 @@ main .reel .right {
 .upper button {
     padding: 0.1rem 0.2rem;
     background-color: transparent;
-    border: 2px solid #000000aa;
+    border: 2px solid #fff;
     color: white;
     border-radius: 0.3rem;
     font-size: 1rem;

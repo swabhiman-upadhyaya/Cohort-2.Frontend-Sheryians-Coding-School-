@@ -1,3 +1,6 @@
+let allReels = document.querySelector(".allReels")
+
+
 const videos = [
     {
         id: 1,
@@ -131,59 +134,84 @@ const videos = [
     }
 ];
 
-let allReels = document.querySelector(".allReels")
+function addData() {
+    
+    sum = ''
+    videos.forEach(function (arrOfObj, index) {
+    sum = sum +
+    `
+    <section class="reel">
+        <video controls src="${arrOfObj.video}"></video>
 
-sum = ''
+        <div class="right">
+            <div class="icon like" id='${index}'>
+                <h3> ${(arrOfObj.isLiked)
+                    ? '<i class="ri-thumb-up-fill"></i>'
+                    : '<i class="ri-thumb-up-line"></i>'} 
+                </h3>
+                <p>${arrOfObj.likeCount}</p>
+            </div>
+            <div class="icon disLike">
+                <h3> ${(arrOfObj.isDisliked)
+                    ? '<i class="ri-thumb-down-fill"></i>'
+                    : '<i class="ri-thumb-down-line"></i>'} 
+                </h3>
+                <p>Dislike</p>
+            </div>
+            <div class="icon comment">
+                <h3><i class="ri-message-2-line"></i></h3>
+                <p>${arrOfObj.commentCount}</p>
+            </div>
+            <div class="icon share">
+                <h3><i class="ri-share-forward-line"></i></h3>
+                <p>Share</p>
+            </div>
+            <div class="icon remix">
+                <h3><i class="ri-loop-right-ai-line"></i></h3>
+                <p>22</p>
+            </div>
+        </div>
 
-videos.forEach(function (arrOfObj) {
-sum = sum +
-`
-<section class="reel">
-    <video controls src="${arrOfObj.video}"></video>
+        <div class="bottom">
+            <div class="upper">
+                <img src="${arrOfObj.userProfile}" alt="">
+                <h4>${arrOfObj.userName}</h4>
+                <button id='${index}' class='Follow'>${(arrOfObj.isFollowed) ? "Unfollow" : "Follow"}</button>
+            </div>
+            <div class="lower">
+                <p>${arrOfObj.caption}</p>
+            </div>
+        </div>
+    </section>
+    `
+    })
+    allReels.innerHTML = sum
 
-    <div class="right">
-        <div class="icon">
-            <h3> ${(arrOfObj.isLiked) 
-                ? '<i class="ri-thumb-up-fill"></i>' 
-                : '<i class="ri-thumb-up-line"></i>'} 
-            </h3>
-            <p>${arrOfObj.likeCount}</p>
-        </div>
-        <div class="icon">
-            <h3> ${(arrOfObj.isDisliked) 
-                ? '<i class="ri-thumb-down-fill"></i>' 
-                : '<i class="ri-thumb-down-line"></i>'} 
-            </h3>
-            <p>Dislike</p>
-        </div>
-        <div class="icon">
-            <h3><i class="ri-message-2-line"></i></h3>
-            <p>${arrOfObj.commentCount}</p>
-        </div>
-        <div class="icon">
-            <h3><i class="ri-share-forward-line"></i></h3>
-            <p>Share</p>
-        </div>
-        <div class="icon">
-            <h3><i class="ri-loop-right-ai-line"></i></h3>
-            <p>22</p>
-        </div>
-    </div>
+}
+addData()
 
-    <div class="bottom">
-        <div class="upper">
-            <img src="${arrOfObj.userProfile}" alt="">
-            <h4>${arrOfObj.userName}</h4>
-            <button>${(arrOfObj.isFollowed) ? "Unfollow" : "Follow" }</button>
-        </div>
-        <div class="lower">
-            <p>${arrOfObj.caption}</p>
-        </div>
-    </div>
-</section>
-`
+
+allReels.addEventListener("click", function (details) {
+    
+    if ((details.target.className) == 'icon like') {
+        if (!videos[details.target.id].isLiked) {
+            videos[details.target.id].isLiked = true;
+            videos[details.target.id].likeCount++;
+        }
+        else if (videos[details.target.id].isLiked) {
+            videos[details.target.id].likeCount--;
+            videos[details.target.id].isLiked = false;
+        }
+    }
+    
+    if ((details.target.className) == 'Follow') {
+        if (!videos[details.target.id].isFollowed) {
+            videos[details.target.id].isFollowed = true;
+        }
+        else if (videos[details.target.id].isFollowed) {
+            videos[details.target.id].isFollowed = false;
+        }
+    }
+
+    addData();
 })
-
-
-
-allReels.innerHTML = sum
