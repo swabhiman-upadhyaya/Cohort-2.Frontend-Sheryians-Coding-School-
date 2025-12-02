@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, crimson, pink, pink);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main p {
+    background-image: url(/colourful\ GIF.gif);
+    background-clip: text;
+    /* color: darkgreen; */
+    font-size: 2rem;
+    color: transparent;
+    cursor: pointer;
+    text-align: center;
+}
+
+:root {
+    --x: 150px;
+    --y: 150px;
+}
+
+main {
+    background: radial-gradient(100px at var(--x) var(--y), rgba(255, 255, 255, 0.344), rgba(0, 0, 0, 0.281));
+}
