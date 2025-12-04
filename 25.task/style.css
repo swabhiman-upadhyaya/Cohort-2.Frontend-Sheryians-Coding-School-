@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.3rem; */
+    anchor-name: --some-anchor;
+}
+
+.box a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 2s linear;
+}
+
+a:hover {
+    anchor-name: --some-anchor;
+}
+
+.anchor {
+    background-color: rgb(67, 67, 67);
+    border-radius: 0.5rem;
+
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+
+
+    pointer-events: none;
+    position-anchor: --some-anchor;
+    transition: all 0.3s ease;
+    mix-blend-mode: difference;
+}
+
+
+
+/* .box a:hover {
+    background-color: grey;
+}
+
+.box:has(a:hover) {
+    background-color: black;
+} */

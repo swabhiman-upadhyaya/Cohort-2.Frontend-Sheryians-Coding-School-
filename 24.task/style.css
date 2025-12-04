@@ -4,65 +4,11 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-}
-
-.box {
-    cursor: pointer;
-    height: 320px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    color: white;
-    /* border: 1px solid white; */
-    padding: 0.5rem;
-    border-radius: 0.8rem;
-
-    box-shadow: 0px 0px 2.8rem #a91953;
-    transition: all 2s ease;
-
-
-    background: #000;                     /* initial state */
-    border: 5px solid transparent;
-    /* transition: background 5s ease, border 1s ease; */
-}
-
-.box:hover {
-    color: #c31058;
-    background: 
-        linear-gradient(#000000) padding-box,
-        conic-gradient(from var(--rotation), #000000, #a91953d3, black) border-box;
-    border: 5px solid rgba(255, 255, 255, 0);
-
-    animation: rotateAnimation 3s linear infinite;
-}
-
-img {
-    width: 200px;
-    height: 220px;
-    object-fit: cover;
-    object-position: top;
-}
-
-.box h3 {
-    text-shadow: 0px 0px 2rem black;
-    font-weight: 550;
-    font-size: 1.9rem;
 }
 
 @property --rotation {
@@ -75,7 +21,74 @@ img {
     from {
         --rotation: 0deg;
     }
+
     to {
         --rotation: 360deg;
     }
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 1.1rem;
+}
+
+h1 {
+    background-image: url(/colourful\ GIF.gif);
+    background-clip: text;
+    color: transparent;
+}
+
+.box {
+    cursor: pointer;
+    height: 320px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    transition: all 2s ease;
+    color: #a91953;
+
+    box-shadow: 0px 0px 0rem #a91953;
+
+    border: 5px solid transparent;
+    transition: background 5s ease, border 1s ease;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 2.8rem #a91953;
+
+    background:
+        linear-gradient(#000000) padding-box,
+        conic-gradient(from var(--rotation), #000000, #a91953d3, black) border-box;
+    border: 5px solid rgba(255, 255, 255, 0);
+
+    animation: rotateAnimation 3s linear infinite;
+}
+
+.box:hover h3, .box:hover p {
+    color: #a91953;
+    text-shadow: 0 0 1rem #a91953, 0 0 0.5rem #a91953;
+}
+
+img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.box h3 {
+    font-weight: 550;
+    font-size: 1.9rem;
 }
