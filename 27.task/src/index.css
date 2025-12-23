@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+/* NAVBAR */
+nav {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+}
+
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6rem;
+}
+
+.logo span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: red;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 4.2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 100;
+}
+
+.lang a {
+    margin-right: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.email {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 1rem;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+.email:hover {
+    background-color: black;
+    color: white;
+}
+
+/* HERO PAGE */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.4;
+    font-size: 1.3rem;
+}
+.hero h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 6.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.hero h1:nth-child(2) {
+        color: white;
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+    transition: all 0.7s ease;
+}
+.hero h1:nth-child(2):hover {
+    color: black;
+    text-shadow: none;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
+}
+
+.btmLeft {
+    display: flex;
+    gap: 1rem;
+}
+.btmLeft p {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.4;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 16rem;
+    position: relative;
+}
+footer img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    height: 16rem;
+    width: 16rem;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    bottom: 0;
+}
+footer button {
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+footer .fstBtn {
+    padding: 0.9rem 1.1rem;
+    background: #000;
+    color: #fff;
+    border: none;
+}
+footer .fstBtn:hover {
+    opacity: 0.6;
+}
+
+footer .secBtn {
+    padding: 0.8rem 1rem;
+    background: transparent;
+}
+footer .secBtn:hover {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
