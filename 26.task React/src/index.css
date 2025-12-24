@@ -75,7 +75,7 @@ nav {
 }
 .hero p {
     font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.4;
+    color: #6a6a6a;
     font-size: 1.3rem;
 }
 .hero h1 {
@@ -101,7 +101,7 @@ nav {
 
 .bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100vw;
     align-items: center;
 }
@@ -112,7 +112,6 @@ nav {
 }
 .btmLeft p {
     font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.4;
     font-size: 1rem;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -134,9 +133,10 @@ footer img {
     height: 16rem;
     width: 16rem;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.84;
     border-radius: 0.5rem;
-    bottom: 0;
+    bottom: -0.5rem;
+    margin-right: 4rem;
 }
 footer button {
     border-radius: 0.3rem;
