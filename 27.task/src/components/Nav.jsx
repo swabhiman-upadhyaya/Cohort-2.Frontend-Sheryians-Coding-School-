@@ -10,7 +10,7 @@ const Nav = () => {
                 <a href="#" className="px-2.5 py-1 bg-stone-700 text-1xl rounded-sm text-sm font-normal">EVENTS</a>
                 <a href="#" className="px-2.5 py-1 bg-stone-700 text-1xl rounded-sm text-sm font-normal">BLOG</a>
                 <a href="#" className="px-2.5 py-1 bg-stone-700 text-1xl rounded-sm text-sm font-normal">CARD</a>
-                <button className="px-3 py-2 bg-orange-600 text-black rounded-sm font-semibold text-sm cursor-pointer hover:bg-orange-700 active:bg-orange-600 transition-all duration-280 ease-in-out">
+                <button className="px-3 py-2 bg-orange-600 text-black rounded-sm font-semibold text-sm cursor-pointer hover:bg-orange-700 active:scale-95 transition-all duration-280 ease-in-out">
                     GET IN TOUCH
                 </button>
             </div>
