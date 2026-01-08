@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Courses from './../pages/Courses';
 
 const Nav = () => {
   return (
@@ -9,6 +10,7 @@ const Nav = () => {
         <Link to='/' className='hover:underline'>Home</Link>
         <Link to='/about' className='hover:underline'>About</Link>
         <Link to='/product' className='hover:underline'>Product</Link>
+        <Link to='/courses' className='hover:underline'>Courses</Link>
       </div>
     </nav>
   )
