@@ -67,10 +67,11 @@ button.createUser:active {
 
 .card {
   margin-top: 0.5rem;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 250px;
+  height: 280px;
   /* min-width: 250px; */
   width: 200px;
   background-color: rgb(47, 255, 71);
