@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.Nav-wrapper {
+  height: 13vh;
+  width: 100%;
+  background: rgb(42, 42, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section-wrapper {
+  height: 70vh;
+  background: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer-wrapper {
+  height: 17vh;
+  width: 100%;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
