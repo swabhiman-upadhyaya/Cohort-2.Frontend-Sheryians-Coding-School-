@@ -9,10 +9,9 @@ const ProductContext = (props) => {
 
   const getData = async () => {
     const response = await axios.get("https://fakestoreapi.com/products")
-
     setAllProduct(response.data)
   }
-
+  
   useEffect(function () {
     getData();
   }, [])

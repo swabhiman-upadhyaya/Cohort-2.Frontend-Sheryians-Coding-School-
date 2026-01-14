@@ -12,8 +12,42 @@ html, body {
   color: white;
 }
 
+/* STYLING OF "NavBar" COMPONENT */
+
+nav {
+  padding: 0.5rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #525252;
+}
+
+nav .logo {
+  color: hotpink;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+nav .navLinks {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+.navLinks a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* STYLING OF "Products" COMPONENT */
+
 .All-Product-wrapper {
-  padding: 0.5rem;
+  padding: 0.8rem 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -38,9 +72,89 @@ html, body {
   height: 14rem;
   width: 13rem;
   border-radius: 0.2rem;
+  box-shadow: 2px 2px 5px #343434;
+  transition: all 0.3s ease;
+}
+.Each-Product-container:hover {
+  scale: 1.02;
+  box-shadow: 2px 2px 5px #545454;
+}
+.Each-Product-container:hover:active {
+  scale: 0.95;
 }
 
 .Each-Product-container img {
   width: 8rem;
   height: 10rem;
+}
+
+/* STYLING OF "ProductDetails" COMPONENT */
+
+.Each-Product-Detail-Container-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Each-Product-Details-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: center;
+  background-color: #828282;
+  padding: 0.2rem 0.4rem;
+  width: 14rem;
+  height: 18rem;
+  border-radius: 0.6rem;
+  scale: 1.05;
+}
+
+.Each-Product-Details-Container h3{
+  font-size: 1.3rem;
+  text-align: center;
+  color: #1a1a1a;
+  text-transform: capitalize;
+  margin-left: 0.3rem;
+}
+
+.Each-Product-Details-Container img{
+  height: 11.5rem;
+  width: 9rem;
+}
+
+.Each-Product-Details-Container p{
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.Each-Product-Details-Container .title {
+  color: #2c2c2c;
+}
+
+.Each-Product-Details-Container .price {
+  color: #1a1a1a;
+}
+
+/* STYLING OF "Home" COMPONENT */
+
+.Home-Wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #828282;
+}
+
+/* STYLING OF "About" COMPONENT */
+
+.About-Wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #828282;
 }
